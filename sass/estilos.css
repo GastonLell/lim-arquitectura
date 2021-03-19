@@ -1,1 +1,12 @@
-/* No CSS *//*# sourceMappingURL=estilos.css.map */
+* {
+  font-family: "Champagne & Limousines", sans-serif;
+}
+
+.navbar-light .navbar-nav .nav-link {
+  color: black;
+}
+
+.header__logo {
+  width: 150px;
+}
+/*# sourceMappingURL=estilos.css.map */
