@@ -1,20 +1,29 @@
 *{
     font-family: "Champagne & Limousines", sans-serif;
-}
-.navbar-light{
-	.navbar-nav{
-		.nav-link{
-			color: black;
-		}
-		.nav-link:hover{
-				border: 1px solid black;
-		}
-	}
-}
-.header__logo{
-    width: 150px;
-}
+	margin: 0px;
+	padding: 0px;
 
-@media (min-width: 576px) {
+	body{
+		overflow-x: hidden;
 	
+
+		.navbar-light{
+			.navbar-nav{
+				.nav-link{
+					color: black;
+					padding: 5px 20px;
+				}
+				.nav-link:hover{
+						border: 1px solid black;
+				}
+			}
+		}
+		.header__logo{
+			width: 150px;
+		}
+		.main__render--ancho{
+			width: 100vw;
+		}
+
+	}
 }
