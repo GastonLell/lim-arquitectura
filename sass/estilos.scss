@@ -3,10 +3,45 @@
 	margin: 0px;
 	padding: 0px;
 
-	body{
-		overflow-x: hidden;
-	
+body{
+	overflow-x: hidden;
+	a{
+		text-decoration: none;
+		color: inherit;
+	}
+	a:hover{
+		color: inherit;
+	}
 
+		.navbar-light{
+			.navbar-nav{
+				.nav-link{
+					color: black;
+					// padding: 5px 20px;
+				}
+			}
+		}
+		.header__logo{
+			width: 150px;
+			height: 100px;
+		}
+		.main__render--ancho{
+			width: 100vw;
+			max-height: 90vh;
+		}
+		#galeria{
+			.col-md-4{
+				padding: 2px;
+				margin: 0px;
+			}
+			img{
+			width: 100%;
+			}
+		}
+		
+
+		// Small devices (landscape phones, 576px and up)
+	@media (min-width: 576px) {
 		.navbar-light{
 			.navbar-nav{
 				.nav-link{
@@ -18,12 +53,33 @@
 				}
 			}
 		}
-		.header__logo{
-			width: 150px;
+		.miContenedor{
+			height: 50vh;
 		}
-		.main__render--ancho{
-			width: 100vw;
-		}
+	 }
 
+	// Medium devices (tablets, 768px and up)
+	@media (min-width: 768px) {
+
+	 }
+
+	// Large devices (desktops, 992px and up)
+	@media (min-width: 992px) {
+		.miContenedor__contacto{
+			max-width: 720px;
+		}
+	 }
+
+	// X-Large devices (large desktops, 1200px and up)
+	@media (min-width: 1200px) {
+		.container{
+			max-width: 960px;
+		}
+	 }
+
+	// XX-Large devices (larger desktops, 1400px and up)
+	@media (min-width: 1400px) {
+
+	 }
 	}
 }

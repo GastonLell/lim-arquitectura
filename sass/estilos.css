@@ -8,20 +8,60 @@
   overflow-x: hidden;
 }
 
-* body .navbar-light .navbar-nav .nav-link {
-  color: black;
-  padding: 5px 20px;
+* body a {
+  text-decoration: none;
+  color: inherit;
 }
 
-* body .navbar-light .navbar-nav .nav-link:hover {
-  border: 1px solid black;
+* body a:hover {
+  color: inherit;
+}
+
+* body .navbar-light .navbar-nav .nav-link {
+  color: black;
 }
 
 * body .header__logo {
   width: 150px;
+  height: 100px;
 }
 
 * body .main__render--ancho {
   width: 100vw;
+  max-height: 90vh;
+}
+
+* body #galeria .col-md-4 {
+  padding: 2px;
+  margin: 0px;
+}
+
+* body #galeria img {
+  width: 100%;
+}
+
+@media (min-width: 576px) {
+  * body .navbar-light .navbar-nav .nav-link {
+    color: black;
+    padding: 5px 20px;
+  }
+  * body .navbar-light .navbar-nav .nav-link:hover {
+    border: 1px solid black;
+  }
+  * body .miContenedor {
+    height: 50vh;
+  }
+}
+
+@media (min-width: 992px) {
+  * body .miContenedor__contacto {
+    max-width: 720px;
+  }
+}
+
+@media (min-width: 1200px) {
+  * body .container {
+    max-width: 960px;
+  }
 }
 /*# sourceMappingURL=estilos.css.map */

@@ -32,16 +32,16 @@
           <div class="collapse navbar-collapse " id="navbarNavDropdown">
             <ul class="navbar-nav flex-grow-1 justify-content-sm-evenly">
               <li class="nav-item">
-                <a class="nav-link" aria-current="page" href="#">ABOUT US</a>
+                <a class="nav-link" href="#aboutus">ABOUT US</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="#">SERVICES</a>
+                <a class="nav-link" href="#services">SERVICES</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="#">PROJECTS</a>
+                <a class="nav-link" href="#projects">PROJECTS</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="#">CONTACT</a>
+                <a class="nav-link" href="#contact">CONTACT</a>
               </li>
             </ul>
           </div>
@@ -49,39 +49,103 @@
       </nav>
     </div>
 
-    <main class="container-fluid px-0">
-        <img class="main__render--ancho" src="images/render-index.jpg" alt="">
-    </main>
-
-    <footer>
-      <div class="container-fluid d-sm-flex">
-        <!----------- LOGO ---------->
-            <a href="index.html"><img class="header__logo" src="/images/logo-loremipsum.jpg" alt=""></a>
-        <!---------- NAVBAR --------->
-        <nav class="navbar navbar-expand-sm navbar-light flex-grow-1">
-            <div class="container-fluid">
-              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-              </button>
-              <div class="collapse navbar-collapse " id="navbarNavDropdown">
-                <ul class="navbar-nav flex-grow-1 justify-content-sm-evenly">
-                  <li class="nav-item">
-                    <a class="nav-link" aria-current="page" href="#">ABOUT US</a>
-                  </li>
-                  <li class="nav-item">
-                    <a class="nav-link" href="#">SERVICES</a>
-                  </li>
-                  <li class="nav-item">
-                    <a class="nav-link" href="#">PROJECTS</a>
-                  </li>
-                  <li class="nav-item">
-                    <a class="nav-link" href="#">CONTACT</a>
-                  </li>
-                </ul>
+    <main class="container-fluid px-0 mt-3 mt-sm-0">
+        <!---------- IMG PRINCIPAL --------->
+        <img class="main__render--ancho" src="images/render-index.jpg" alt="Imagen principal">
+        <!---------- QUIENES SOMOS --------->
+        <div class="container d-flex miContenedor align-items-center mt-3 mt-sm-4 mt-md-0">
+          <div class="text-center">
+            <h4 class="mb-5" id="aboutus">ABOUT US</h4>
+            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Voluptas repudiandae voluptates sequi ipsum consectetur quas et numquam beatae illo ea architecto ducimus voluptatem suscipit veniam amet, cumque aliquid! Sapiente, adipisci.</p>
+            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Dolores blanditiis deleniti odio rem aliquam dolorum quod pariatur, vero ullam modi dolore natus eum eligendi accusantium nisi doloremque reiciendis incidunt. Facere iusto repellendus reprehenderit dicta delectus praesentium cum, et deserunt quisquam mollitia exercitationem sed, saepe pariatur ullam aspernatur est hic totam?</p>
+          </div>
+        </div>
+        <!------------ SERVICIOS ----------->
+        <div class="container d-flex miContenedor align-items-center mt-5 mt-sm-3 mt-md-0">
+          <div class="text-center">
+            <h4 class=" mb-5" id="services">SERVICES</h4>
+            <div class="row">
+              <div class="col-12 col-md-4">
+                <h5 class="fw-bold">Diseño y representación de proyectos</h5>
+                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quisquam itaque debitis molestias minus consectetur ullam rerum, facilis maxime quis magni.</p>
+              </div>
+              <div class="col-12 col-md-4">
+                <h5 class="fw-bold">Documentación 2D</h5>
+                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Labore atque quidem beatae, ipsam animi aut sit magni, corporis mollitia deleniti quisquam? Dolorum nihil cum autem.</p>
+              </div>
+              <div class="col-12 col-md-4">
+                <h5 class="fw-bold">Documentación 3D</h5>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Facilis repudiandae ducimus possimus repellat corrupti unde quasi quas eligendi. Nostrum officiis neque deserunt!</p>
               </div>
             </div>
-          </nav>
+          </div>
         </div>
+        <!------------ PROJECTOS ----------->
+        <section id="galeria" class="container-fluid mt-5">
+          <div class="text-center">
+            <h4 class="mb-4" id="projects">PROJECTS</h4>
+          </div>
+          <div class="row">
+            <div class="col-sm-6 col-md-4">
+              <img src="/images/render1.jpg" alt="imagen galeria">             
+            </div>
+            <div class="col-sm-6 col-md-4">
+              <img src="/images/render2.jpg" alt="imagen galeria">
+            </div>
+            <div class="col-sm-6 col-md-4">
+              <img src="/images/render3.jpg" alt="imagen galeria">              
+            </div>
+            <div class="col-sm-6 col-md-4">
+              <img src="/images/render4.jpg" alt="imagen galeria">
+            </div>
+            <div class="col-sm-6 col-md-4">
+              <img src="/images/render5.jpg" alt="imagen galeria">
+            </div>
+            <div class="col-sm-6 col-md-4">
+              <img src="/images/render6.jpg" alt="imagen galeria">
+            </div>
+          </div>
+        </section>
+        <!------------ CONTACTO ----------->
+        <div class="container miContenedor miContenedor__contacto align-items-center mt-5">
+          <div class="text-center">
+            <h4 id="contact" class="mb-5">CONTACT</h4>
+          <div class="row">
+            <div class="col">
+              <input type="text" class="form-control" placeholder="Nombre" aria-label="First name">
+            </div>
+            <div class="col">
+              <input type="text" class="form-control" placeholder="Apellido" aria-label="Last name">
+            </div>
+          </div>
+          <div class="row mt-4 mb-4">
+            <div class="col">
+              <input type="email" class="form-control" placeholder="Email" aria-label="First name">
+            </div>
+            <div class="col">
+              <input type="tel" class="form-control" placeholder="Teléfono" aria-label="Last name">
+            </div>
+          </div>
+          <div class="form-floating">
+            <textarea class="form-control" placeholder="Leave a comment here" id="floatingTextarea2" style="height: 100px"></textarea>
+            <label for="floatingTextarea2">Escribinos tu consulta...</label>
+          </div>
+          <div class="col-12 mt-4 text-end">
+            <button type="submit" class="btn btn-primary px-4">Contactanos</button>
+          </div>
+          </div>
+        </div>
+    </main>
+
+    <footer class="container-fluid mt-5 mt-sm-4 bg-secondary p-4">
+      <div class="container">
+        <div class="row text-center">
+          <div class="col-12 col-sm-3"><h5><a href="#">Home</a></h5></div>
+          <div class="col-12 col-sm-3"><h5><a href="#aboutus">About US</a></h5></div>
+          <div class="col-12 col-sm-3"><h5><a href="#services">Services</a></h5></div>
+          <div class="col-12 col-sm-3"><h5><a href="#projects">Projects</a></h5></div>
+        </div>
+      </div>
     </footer>
 
 
